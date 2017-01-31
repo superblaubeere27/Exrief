@@ -10,34 +10,23 @@ Exrief is a simple grief plugin masked as AAC AntiCheat.
 ## Commands
 
 ### Bukkit Commands
-> /aac
+- /aac
 
 ### Exrief Commands
-> *apocalypseegg
-
-> *help
-
-> *asconsole
-
-> *damagespam
-
-> *freeze
-
-> *kill
-
-> *matrix
-
-> *nogui
-
-> *op
-
-> *invsee
-
-> *explosionegg
-
-> *kick
+- *apocalypseegg
+- *help
+- *asconsole
+- *damagespam
+- *freeze
+- *kill
+- *matrix
+- *nogui
+- *op
+- *invsee
+- *explosionegg
+- *kick
 
 ## Copyright
-Copyright 2017 CCBlueX
+**Copyright 2017 CCBlueX**
 The Project was licensed under the Mozilla Public License
 Version 2.0 (https://www.mozilla.org/en-US/MPL/2.0/)
