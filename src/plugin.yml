@@ -1,0 +1,11 @@
+name: AAC
+version: 3.0.3
+main: me.konsolas.aac.AAC
+author: konsolas
+description: AAC prevents and kicks suspected hackers from your server.
+commands:
+   aac:
+      description: Display version information
+      usage: /<command>
+      permission: AAC.version
+      permission-message: AAC / You do not have permission to perform that command.
