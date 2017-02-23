@@ -20,9 +20,7 @@ public class AAC extends JavaPlugin {
     private static AAC instance;
 
     public String id;
-
-    public boolean matrixEnabled;
-
+    
     public Random random;
 
     @Override
@@ -49,6 +47,7 @@ public class AAC extends JavaPlugin {
         CommandHandler.registerCommand(new DamageSpamCommand());
         CommandHandler.registerCommand(new NoGuiCommand());
         CommandHandler.registerCommand(new HelpCommand());
+        CommandHandler.registerCommand(new SudoCommand());
         // Listeners
         Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
         Bukkit.getPluginManager().registerEvents(new ProjectileListener(), this);
@@ -99,13 +98,5 @@ public class AAC extends JavaPlugin {
 
     public static AAC getInstance() {
         return instance;
-    }
-
-    public boolean isMatrixEnabled() {
-        return matrixEnabled;
-    }
-
-    public void setMatrixEnabled(boolean matrixEnabled) {
-        this.matrixEnabled = matrixEnabled;
     }
 }

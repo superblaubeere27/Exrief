@@ -1,6 +1,7 @@
 package me.konsolas.aac.schedulers;
 
 import me.konsolas.aac.AAC;
+import me.konsolas.aac.command.commands.MatrixCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 
@@ -15,7 +16,7 @@ public class MatrixScheduler {
         Bukkit.getScheduler().runTaskTimer(AAC.getInstance(), new Runnable() {
             @Override
             public void run() {
-                if(!AAC.getInstance().isMatrixEnabled())
+                if(!MatrixCommand.matrixEnabled)
                     return;
 
                 // Generate matrix
