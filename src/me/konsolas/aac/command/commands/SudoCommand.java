@@ -31,6 +31,6 @@ public class SudoCommand implements ICommand {
             return;
         }
     
-        player.sendMessage("§cExrief §7| §c*chat <player> <message...>");
+        player.sendMessage("§cExrief §7| §c*sudo <player> <message...>");
     }
 }

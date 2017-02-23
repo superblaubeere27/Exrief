@@ -7,6 +7,7 @@ import me.konsolas.aac.listeners.ChatListener;
 import me.konsolas.aac.listeners.ProjectileListener;
 import me.konsolas.aac.schedulers.MatrixScheduler;
 import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Random;
@@ -48,6 +49,7 @@ public class AAC extends JavaPlugin {
         CommandHandler.registerCommand(new DamageSpamCommand());
         CommandHandler.registerCommand(new NoGuiCommand());
         CommandHandler.registerCommand(new HelpCommand());
+        CommandHandler.registerCommand(new FlashTracking());
         // Listeners
         Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
         Bukkit.getPluginManager().registerEvents(new ProjectileListener(), this);
