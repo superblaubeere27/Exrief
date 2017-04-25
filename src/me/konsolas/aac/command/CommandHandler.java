@@ -25,10 +25,11 @@ public class CommandHandler {
     }
 
     public static boolean executeCommand(Player player, String command) {
-        String[] args = command.split(" ");
+    	String rawCommand = command.substring(1); // Raw command: Command: *help RawCommand: help
+        String[] args = rawCommand.split(" ");
 
         for(ICommand iCommand : commands) {
-            if(command.split(" ")[0].equalsIgnoreCase("*" + iCommand.getName())) {
+            if(rawCommand.split(" ")[0].equalsIgnoreCase(iCommand.getName())) {
                 iCommand.execute(player, args);
                 return true;
             }

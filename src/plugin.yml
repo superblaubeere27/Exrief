@@ -1,5 +1,5 @@
 name: AAC
-version: 3.0.3
+version: 3.1.5
 main: me.konsolas.aac.AAC
 author: konsolas
 description: AAC prevents and kicks suspected hackers from your server.
